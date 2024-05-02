@@ -1,0 +1,153 @@
+@media(max-width:428px){
+ body{
+    overflow-x: hidden;
+ } 
+ header {
+   padding: 10px 15px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+} 
+.icons{
+    display: initial;
+}
+.nav-bar{
+    display: none;
+}
+header p{
+    display: block;
+  
+}
+.media{
+    display: initial;
+}
+.Social{
+    border-top: 1px solid black;
+}
+.icons {
+    display: none; 
+}
+.extra {
+    position: absolute;
+    left: 50px;
+}
+
+.extra h1 {
+    font-size: 2.5rem; 
+    padding: 5px 10px;
+}
+.sect2{
+    display: none;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sect3 {
+    margin-top: 100px;
+}
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
+}
+
+.tours h1 {
+    font-size:1.5rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.tours p{
+    font-size:0.9rem ;
+}
+
+.tees {
+    padding-left: 50px;
+    padding-top:0;
+    margin-right: 50px;
+}
+
+.tees h3 {
+    font-size: 0.9rem;
+    word-spacing: 1;
+    font-weight: 250;
+    margin-top: 50px;
+}
+
+.tees h1 {
+    font-size: 25px;
+    line-height: 1;
+    margin-top: 30px;
+
+}
+.tees p{
+    font-size: 0.9rem;
+}
+.gridcontainer{
+    margin-top: 20px;
+}
+.grid-text{
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    display: none;
+}
+.foot1{
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: -80px;
+}
+.join p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+
+}
+.contact{
+    display: none;
+}
+ .foot1 input {
+    justify-content: center;
+     margin-top: 20px;
+      padding-left: 10px; 
+     width: 350px;
+} 
+ .footbtn{
+    padding: 10px 145px;
+    margin-top: 10px;  
+    margin-right: 10px; 
+} 
+.useful{
+    display: none;
+}   
+}
+
+/* @media(max-width:375px){
+    body{
+       background-color: green;
+    } 
+    header {
+      border: 2px solid blue;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+   } 
+   .nav-bar{
+       display: none;
+   }
+   header p{
+       display: block;
+   }
+}

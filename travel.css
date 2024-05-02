@@ -1,0 +1,730 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 7%;
+    color: rgb(10, 10, 41);
+    border-bottom: 1px solid black;
+}
+header p{
+    color: black;
+    display: none;
+}
+
+header .nav-bar ul {
+    list-style: none;
+}
+
+header .nav-bar ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+header .nav-bar ul li a {
+    color: rgb(6, 6, 66);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+
+
+}
+
+header .nav-bar ul li a:hover {
+    color: rgb(6, 6, 66);
+    background-color: white;
+}
+
+header .nav-bar ul li ul {
+    background-color: pink;
+    color: rgb(6, 6, 66);
+    width: 150px;
+    position: absolute;
+    display: none;
+    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.301);
+
+}
+
+
+header .nav-bar ul li ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+
+}
+
+header .nav-bar ul li ul li:hover {
+    background-color: white;
+
+
+}
+
+header .nav-bar ul li ul li ul {
+    position: absolute;
+    left: 150px;
+    top: 0;
+
+}
+
+header .nav-bar ul li ul li ul li ul {
+    position: absolute;
+    left: 150px;
+    top: 0;
+}
+
+header .nav-bar ul li:hover>ul {
+    display: initial;
+}
+
+.logo img {
+    height: 50px;
+    padding-left: 50px;
+    margin-left: 0px;
+}
+
+.navbar a {
+    color: rgba(5, 5, 63, 0.819);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.media{
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+.hero1 {
+    position: relative;
+    margin-right: 50px;
+}
+ .media{
+    display: none;
+} 
+
+.extra {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.extra h1 {
+    padding: 15px 15px;
+    font-size: 3rem;
+    margin-bottom: 3px;
+}
+
+.extra p {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.sect2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    background-color: white;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.location {
+    position: relative;
+}
+
+.location input {
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.097);
+    font-size: 1rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+.location img {
+    position: absolute;
+    width: 30px;
+    top: 13px;
+    left: 10px;
+}
+
+.calender {
+    position: relative;
+}
+
+.calender input {
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.097);
+    font-size: 1rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+.calender img {
+    position: absolute;
+    width: 25px;
+    top: 15px;
+    left: 10px;
+
+}
+
+.pin {
+    position: relative;
+}
+
+.pin select {
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.097);
+    font-size: 1rem;
+    width: 200px;
+    cursor: pointer;
+
+}
+
+.pin img {
+    position: absolute;
+    width: 25px;
+    top: 15px;
+    left: 10px;
+}
+
+.card .find {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card .find:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.339);
+    background-color: white;
+    color: black;
+}
+
+
+.sect3 {
+    margin-top: 100px;
+}
+
+.tours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+
+}
+
+.tours h1 {
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 15px;
+
+}
+
+.tours p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.line {
+    background-color: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.308);
+    width: 45px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sect4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cards01 {
+    width: 350px;
+    height: 500px;
+}
+
+.cards02 {
+    width: 350px;
+    height: 500px;
+}
+
+.cards03 {
+    width: 350px;
+    height: 500px;
+}
+
+.img {
+    width: 346px;
+    height: 295px;
+    background-image: url(swimmingpool.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    transition: background-size 0.5s ;
+ 
+
+}
+.img:hover {
+    background-size: 125%;
+   
+ 
+}
+
+.img2 {
+    width: 346px;
+    height: 295px;
+    background-image: url(coupleriding.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center; 
+    transition: background-size 0.5s ;
+   
+   
+}
+.img2:hover{
+    background-size: 125%;
+    
+}
+.cards .img3 {
+    width: 346px;
+    height: 295px;
+    background-image: url(beach.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    transition: background-size 0.4s;
+}
+.img3:hover {
+    background-size: 125%;
+
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.leb {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.leb h1 {
+    color: black;
+}
+
+.superb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.para-leb {
+    margin-top: 10px;
+}
+
+.loc {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+small {
+    color: gray;
+}
+
+.grid-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+.gridcontainer {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+     
+}
+
+.box1 {
+    background-image: url(../project/download-q4beq0z1ak1wrct5n7fdj0liwxi4xeqwyhot4dgxpo.png);
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.box2 {
+    background-image: url(./seclast.jpg);
+    width: 250px;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box3 {
+    background-image: url(thirdlast.jpg);
+    width: 250px;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+.box {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+.imgexp {
+    display: flex;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.925), rgba(255, 255, 255, 0.925), rgba(255, 255, 255, 0.925)), url(coupleriding.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.tees h3 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    word-spacing: 1.5;
+    font-weight: 300;
+    margin-top: 100px;
+
+}
+
+.tees h1 {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.815);
+    line-height: 1.5;
+    margin-top: 50px;
+
+}
+
+.tees .btnmaga {
+    cursor: pointer;
+    background-color: rgb(3, 3, 87);
+    color: white;
+    padding: 15px 40px;
+    margin-top: 30px;
+    /* transition: all 0.3s ease-in; */
+}
+
+.tees .btnmaga:hover {
+    background-color: black;
+    color: white;
+
+    box-shadow: none;
+}
+
+.europage{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.europage h1{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center ;
+}
+.gridboxes{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    height: 55vh;
+    width: 87%;
+margin-left: 100px;
+}
+
+.boxeuro1 {
+    width: 465px;
+    height: 350px;
+}
+.boximg{
+    background-image: url(portugalbridge.jpg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg2{
+    background-image: url(portugalbuilding.jpg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg3{
+    background-image: url(frenchcafe.jpg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg4{
+    background-image: url(wineeiffel.jpg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boxtext h2{
+ font-weight: 400;
+ font-size: 1.5rem; 
+ color: rgba(0, 0, 0, 0.74);
+ font-family: 'Franklin Gothic Medium';  
+}
+.boxtext p{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.boxeuro2{
+    width: 465px;
+    height: 350px;
+}
+.boximg5{
+    background-image: url(Screenshot_1-5-2024_18160_travelinn.life.jpeg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg6{
+    background-image: url(OIP.jpeg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg7{
+    background-image: url(extreme-heat-1024x576.jpeg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.boximg8{
+    background-image: url(visa.jpeg);
+    width: 265px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.secgridboxes{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    height: 55vh;
+    width: 87%;
+margin-left: 100px;  
+}
+
+.foot1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.925), rgba(255, 255, 255, 0.788), rgba(255, 255, 255, 0.897)), url(foot1bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.join {
+    margin-left: 100px;
+}
+
+.foot1 h1 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 400;
+
+}
+
+.foot1 p {
+    margin-top: 30px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.foot1 input {
+    padding: 15px 65px;
+    margin-right: 15px;
+    justify-items: flex-start;
+}
+
+.footbtn {
+    cursor: pointer;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.568);
+    padding: 10px 40px;
+    margin-top: 30px;
+    box-shadow: none;
+}
+
+.useful a {
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.473);
+    margin-right: 100px;
+
+}
+
+.useful {
+    margin-top: -70px;
+
+}
+
+.iconsfoot {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footericons {
+    display: flex;
+    gap: 5px;
+}
+
+.foot2 {
+    display: flex;
+    background-color: rgb(4, 4, 46);
+    color: rgba(255, 255, 255, 0.548);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
